@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "EVReflectionXML", targets: ["EVReflectionXML"])
     ],
     dependencies: [
-        .package(url: "https://github.com/nicklockwood/XMLDictionary.git", from: "3.0.0")
+        .package(url: "https://github.com/nicklockwood/XMLDictionary.git", .branch("master"))
     ],
     targets: [
         .target(
