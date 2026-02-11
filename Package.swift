@@ -14,13 +14,13 @@ let package = Package(
         .library(name: "EVReflectionXML", targets: ["EVReflectionXML"])
     ],
     dependencies: [
-        .package(url: "https://github.com/nicklockwood/XMLDictionary.git", from: "1.4.1") // Required for XML support
+        .package(url: "https://github.com/nicklockwood/XMLDictionary.git", from: "3.0.0")
     ],
     targets: [
         .target(
             name: "EVReflection",
             path: "Source",
-            exclude: ["XML", "Realm", "CloudKit", "CoreData", "Alamofire"] // Exclude unrelated extensions
+            exclude: ["XML", "Realm", "CloudKit", "CoreData", "Alamofire"]
         ),
         .target(
             name: "EVReflectionXML",
